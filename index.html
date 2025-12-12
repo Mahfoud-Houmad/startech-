@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>StarTech 2025 – Suivez-nous !</title>
+  <style>
+    /* --- Configuration de base --- */
+    body {
+      font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      background-color: #f4f7f6;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    /* --- Barre bleue du haut --- */
+    .header-bar {
+      width: 100%;
+      /* HAUTEUR AUGMENTÉE : Cela pousse tout le contenu vers le bas */
+      height: 180px; 
+      background-color: #5b86e5;
+      position: relative;
+    }
+
+    .share-button {
+      position: absolute;
+      top: 25px;
+      right: 25px;
+      color: white;
+      cursor: pointer;
+      opacity: 0.9;
+      transition: opacity 0.2s;
+    }
+    .share-button:hover { opacity: 1; }
+
+    /* --- Conteneur Principal --- */
+    .main-container {
+      background-color: white;
+      width: 85%;
+      max-width: 380px;
+      border-radius: 20px;
+      padding: 0 30px 50px 30px;
+      
+      /* MARGE TOP AJUSTÉE : On remonte la carte pour chevaucher, 
+         mais comme le header est plus grand, la carte est plus basse globalement */
+      margin-top: -90px; 
+      margin-bottom: 60px; /* Espace en bas de page */
+      
+      box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+      text-align: center;
+      position: relative;
+      z-index: 10;
+    }
+
+    /* --- Carré du Logo --- */
+    .logo-container {
+      width: 140px;
+      height: 140px;
+      background-color: #134e70;
+      border-radius: 16px;
+      margin: -70px auto 30px; /* Positionnement du logo à cheval */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 10px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    }
+
+    .logo {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      display: block;
+    }
+
+    /* --- Typographie --- */
+    h1 {
+      font-size: 24px;
+      font-weight: 700;
+      color: #222;
+      /* MARGIN TOP AJOUTÉE ICI : Espace entre le logo et le titre */
+      margin-top: 20px; 
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 15px;
+      color: #666;
+      line-height: 1.6;
+      margin-bottom: 45px;
+      padding: 0 5px;
+    }
+
+    h3 {
+      font-size: 16px;
+      font-weight: 600;
+      color: #333;
+      margin-bottom: 20px;
+      text-align: left;
+    }
+
+    /* --- Cartes des liens --- */
+    .card {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background: white;
+      text-decoration: none;
+      padding: 18px 20px;
+      border-radius: 14px;
+      margin-bottom: 20px;
+      border: 1px solid #f0f0f0; 
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 8px 20px rgba(91, 134, 229, 0.15);
+      border-color: #5b86e5;
+    }
+
+    .icon {
+      width: 38px;
+      height: 38px;
+      margin-right: 18px;
+    }
+
+    .text {
+      flex-grow: 1;
+      text-align: left;
+    }
+
+    .text strong {
+      display: block;
+      font-size: 16px;
+      color: #333;
+      margin-bottom: 3px;
+    }
+
+    .text span {
+      font-size: 13px;
+      color: #888;
+    }
+
+    .arrow {
+      font-size: 22px;
+      color: #ccc;
+      margin-left: 10px;
+    }
+
+    /* --- Responsive Mobile --- */
+    @media (max-width: 480px) {
+      .header-bar { height: 160px; } /* Ajusté pour mobile */
+      
+      .main-container {
+        width: 88%;
+        margin-top: -80px;
+        padding: 0 20px 40px 20px;
+      }
+
+      .logo-container {
+        width: 120px;
+        height: 120px;
+        margin-top: -60px;
+        margin-bottom: 25px;
+      }
+      
+      h1 { margin-top: 15px; } /* Un peu moins d'espace sur petit écran */
+    }
+  </style>
+</head>
+<body>
+
+  <div class="header-bar">
+    <div class="share-button">
+      <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="18" cy="5" r="3"></circle><circle cx="6" cy="12" r="3"></circle><circle cx="18" cy="19" r="3"></circle><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"></line><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"></line></svg>
+    </div>
+  </div>
+
+  <div class="main-container">
+    <div class="logo-container">
+      <img src="WhatsApp Image 2025-12-05 à 13.05.44_d52a33cd.jpg" alt="StarTech Africa Logo" class="logo" />
+    </div>
+
+    <h1>StarTech 2025 – Suivez-nous !</h1>
+    <p>
+      Merci d'avoir scanné le QR code ! Retrouvez ici tous les réseaux sociaux officiels de StarTech 2025 pour suivre les annonces, photos, vidéos et moments forts.
+    </p>
+
+    <h3>Find us on </h3>
+
+    <a class="card" href="https://linkedin.com" target="_blank">
+      <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" class="icon" alt="LinkedIn" />
+      <div class="text">
+        <strong>LinkedIn</strong>
+        <span>Suivez-nous</span>
+      </div>
+      <span class="arrow">→</span>
+    </a>
+
+    <a class="card" href="https://instagram.com" target="_blank">
+      <img src="https://cdn-icons-png.flaticon.com/512/1384/1384063.png" class="icon" alt="Instagram" />
+      <div class="text">
+        <strong>Instagram</strong>
+        <span>Suivez-nous</span>
+      </div>
+      <span class="arrow">→</span>
+    </a>
+
+    <a class="card" href="https://facebook.com" target="_blank">
+      <img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" class="icon" alt="Facebook" />
+      <div class="text">
+        <strong>Facebook</strong>
+        <span>Suivez-nous</span>
+      </div>
+      <span class="arrow">→</span>
+    </a>
+
+  </div>
+</body>
+</html>
